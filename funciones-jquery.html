@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prueba Bootstrap</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
+    <link rel="stylesheet" href="style-funciones-jquery.css">
+</head>
+
+<body>
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <nav class="navbar navbar-light bg-light">
+                <div class="container">
+                    <a class="navbar-brand" href="#">
+                        <img src="img/pi.png" alt="Logo pi" width="30" height="24">
+                    </a>
+                </div>
+            </nav>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="#">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Articulos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Noticias</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Tutoriales</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">donaciones</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Otros temas
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#">Algoritmos</a></li>
+                            <li><a class="dropdown-item" href="#">Vision por computador</a></li>
+                            <li><a class="dropdown-item" href="#">Machine learning</a></li>
+                            <li><a class="dropdown-item" href="#">Estadistica</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Otros</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Buscar</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <!-- carrusel -->
+    <div id="carouselExampleControls" class="carousel carousel-dark slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="img/alg1.png" class="d-block w-100 h-80" alt="..." width="100%">
+            </div>
+            <div class="carousel-item">
+                <img src="img/alg2.png" class="d-block w-100 h-80" alt="..." width="100%">
+            </div>
+            <div class="carousel-item">
+                <img src="img/alg3.png" class="d-block w-100 h-80" alt="..." width="100%">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+    <!-- tabla de contenidos -->
+    <div class="container tabla-contenidos py-5 mx-0">
+        <div class="row mb-5">
+            <div class="col-md">
+                <h2 id="boton-tabla" class="btn btn-primary mb-0">Tabla de contenidos</h2>
+                <table id="tabla" class="table table-secondary table-hover my-5 mt-0">
+                    <thead>
+                        <tr>
+                            <th scope="col-md">#</th>
+                            <th scope="col-md">Tema</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">1</th>
+                            <td>¿Cual es la diferencia entre algoritmos heuristicos y "no heuristicos"?</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">2</th>
+                            <td colspan="2">Ejemplo laberinto</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">3</th>
+                            <td colspan="2">¿Como crear heuristicas?</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <!-- seccion #1  -->
+        <div id="seccion-1" class="row">
+            <div class="col-md">
+                <div class="row">
+                    <div class="col-md-1">
+                        <h2>1.</h2>
+                    </div>
+                    <div class="col-md-11">
+                        <h2>¿Cual es la diferencia entre algoritmos heuristicos y "no heuristicos"?</h2>
+                    </div>
+                </div>
+                <p>Los algoritmos "no heurísticos" o rigurosos, por así decirles, son algoritmos que funcionan de forma
+                    veraz y respaldados por una
+                    teoría rigurosa. Es decir, tras de ellos existen teorías y/o modelos matemáticos, estadísticos u de
+                    otras índole que aseguran siempre
+                    llegar al mejor resultado que sus hiperparametros permitan de manera determinista.</p>
+
+                <p>Mientras que por otro lado, los algoritmos heurísticos son algoritmos que se basan en resultados
+                    anteriores y no obligatoriamente en
+                    resultados del mismo problema, si no que puede darse el caso que se ocupen resultados de problemas
+                    parecidos. Es decir, se CREE
+                    que cierta forma de hacerse algo (ocupando una heurística) debe dar los mejores resultados.</p>
+
+                <p>Puedes encontrar un video informativo en el <a href="">siguiente enlace</a></p>
+            </div>
+        </div>
+        <div class="row mt-5">
+            <div id="mostrar-imagen-1" class="col-md btn btn-primary mostrar-imagen">Mostrar imagen</div>
+        </div>
+        <div id="imagen-1" class="row my-5 px-5 mt-0">
+            <div class="col-md">
+                <div class="imagen"><img class="img-fluid" src='img/esquema_algoritmos.png'><span>Figura 1:
+                        Esquema de algoritomo heuristicos.</span></div>
+            </div>
+        </div>
+
+        <!-- seccion #2  -->
+        <div id="seccion-2" class="row mt-5">
+            <div class="col-md">
+                <div class="row">
+                    <div class="col-md-1">
+                        <h2>2.</h2>
+                    </div>
+                    <div class="col-md-11">
+                        <h2>Ejemplo laberinto</h2>
+                    </div>
+                </div>
+                <p>Te doy un ejemplo:</p>
+                <p>Si quisiera salir de un laberinto, la manera "no heurística" de hacerlo seria ir siempre por la
+                    derecha hasta encontrar
+                    la salida. Esto no asegura el camino mas corto, incluso puede pasar que sea el camino mas largo.</p>
+
+                <p>Una forma heurística de hacer lo anterior seria ir alternando hacia donde se dobla dentro del
+                    laberinto.
+                    Esto seria una heurística asumiendo que haya resuelto otros laberintos antes donde me di cuenta que
+                    esta
+                    "forma de resolverlo" daba buenos resultados.</p>
+                <p>Otro ejemplo es el ajedrez. Muchas veces cuando juegan humanos o maquinas no pueden ver mas allá de
+                    16 o 1000+ jugadas de
+                    profundidad, correspondientemente. Y cuando este es el caso, ocupan una heurística que obtienen de
+                    situaciones anteriores
+                    en las que esa heurística le dio buenos resultados.</p>
+            </div>
+        </div>
+        <div class="row mt-5">
+            <div id="mostrar-imagen-2" class="col-md btn btn-primary">Mostrar imagen</div>
+        </div>
+        <div id="imagen-2" class="row my-5 px-5 mt-0">
+            <div class="col-md">
+                <div class="imagen"><img class="img-fluid rounded mx-auto d-block" src='img/laberinto.png'><span>Figura
+                        2: Ejemplo laberinto.</span></div>
+            </div>
+        </div>
+
+        <!-- seccion #3  -->
+        <div id="seccion-3" class="row mt-5">
+            <div class="col-md">
+                <div class="row">
+                    <div class="col-md-1">
+                        <h2>3.</h2>
+                    </div>
+                    <div class="col-md-11">
+                        <h2>¿Como crear heuristicas?</h2>
+                    </div>
+                </div>
+                <p>Algo que podrías preguntar es: ¿Cómo se crea una heurística con poca
+                    o nula experiencia anterior?</p>
+
+                <p>En general lo que se hace es <b>RELAJAR</b> el problema, por ejemplo,
+                    Si quiero obtener una heurística de 8-puzle podría:</p>
+
+                <ul>
+                    <li>Asumir que no es necesario que el uno este en el cuadro de
+                        arriba a la izquierda y obtener una heurística resolviéndolo</li>
+                    <li>Hacer comodines (que valen por cualquier numero) los números de
+                        4 en adelante, resolver el problema y crear otra heurística.</li>
+                </ul>
+            </div>
+            <div class="row mt-5">
+                <div id="mostrar-imagen-3" class="col-md btn btn-primary mostrar-imagen">Mostrar imagen</div>
+            </div>
+            <div id="imagen-3" class="row my-5 px-5 mt-0">
+                <div class="col-md">
+                    <div class="imagen"><img class="img-fluid rounded mx-auto d-block"
+                            src='img/8-puzle.png'><span>Figura 3:
+                            Ejemplo 8-puzle.</span></div>
+                </div>
+            </div>
+            <div class="row mt-5">
+                <div class="col-md">
+                    <p>Después podría crea una heurística de cada RELAJO que se hizo o combinarlos con una simple
+                        combinaciones lineal en
+                        primera instancia.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- formulario final  -->
+        <div class="row py-3 mt-5">
+            <div class="col-md">
+                <div class="row">
+                    <div class="col-md">
+                        <h4>¿Te gusto nuestro contenido?</h4>
+                    </div>
+                    <div class="col-md">
+                        <h4>
+                            <div id="boton-formulario" class="btn btn-primary">¡Inscribete para mas!</div>
+                        </h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row formulario">
+            <label for="exampleInputEmail1" class="form-label">Nombre</label>
+            <div class="col-md">
+                <input type="text" class="form-control" placeholder="Nombre" aria-label="First name">
+            </div>
+            <div class="col-md">
+                <input type="text" class="form-control" placeholder="apellido" aria-label="Last name">
+            </div>
+        </div>
+        </form>
+        <form class="formulario">
+            <div class="mb-3">
+                <div class="mb-3">
+                    <label for="exampleInputEmail1" class="form-label">Email</label>
+                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                    <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                </div>
+                <div class="mb-3">
+                    <label for="exampleInputPassword1" class="form-label">Profesion</label>
+                    <input type="input-text" class="form-control" id="exampleInputPassword1">
+                </div>
+                <select class="form-select mb-3" aria-label="Default select example">
+                    <option selected>¿Cual es el tema que mas te interesa?</option>
+                    <option value="1">Programación</option>
+                    <option value="2">Machine Learning</option>
+                    <option value="3">Vision artificial</option>
+                </select>
+                <label for="exampleInputEmail1" class="form-label">¿Estas de acuerdo con nuestras politicas de
+                    privacidad?</label>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1"
+                        value="option1" checked>
+                    <label class="form-check-label" for="exampleRadios1">
+                        Si
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2"
+                        value="option2">
+                    <label class="form-check-label" for="exampleRadios2">
+                        No
+                    </label>
+                </div>
+                <button type="submit" class="btn btn-primary my-3">Submit</button>
+        </form>
+    </div>
+    </div>
+
+    <!-- libreria JS de Bootstrap-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8"
+        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+    <!-- Scrip -->
+    <script src="scrip-funciones-jquery.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PLANTILLA DE BOOTSTRAP CON JQUERY</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link rel="stylesheet" href="funciones-jquery2.css">
+</head>
+
+<body>
+
+    <!-- Hide - Show - Toggle  -->
+    <div class="row mt-5 mx-5">
+        <div class="col-md hide">
+            <div class="row">
+                <div class="col-md">
+                <h3 class="btn btn-primary">Hide</h3>
+            </div>
+            </div>
+            <div class="row">
+                <div class="col-md">
+                    <img src="img/luffy.png" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="col-md show">
+            <div class="row">
+                <div class="col-md">
+                <h3 class="btn btn-primary">show</h3>
+            </div>
+            </div>
+            <div class="row">
+                <div class="col-md">
+                    <img src="img/zoro.png" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="col-md toggle">
+            <div class="row">
+                <div class="col-md">
+                <h3 class="btn btn-primary">Toggle</h3>
+            </div>
+            </div>
+            <div class="row">
+                <div class="col-md">
+                    <img src="img/nami.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- slideup -slidedown - slidetoggle -->
+    <div class="row mt-5 mx-5">
+        <div class="col-md slideup">
+            <div class="row">
+                <div class="col-md">
+                <h3 class="btn btn-primary">slideUp</h3>
+            </div>
+            </div>
+            <div class="row">
+                <div class="col-md">
+                    <img src="img/ussop.png" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="col-md slidedown">
+            <div class="row">
+                <div class="col-md">
+                <h3 class="btn btn-primary">slideDown</h3>
+            </div>
+            </div>
+            <div class="row">
+                <div class="col-md">
+                    <img src="img/sanji.png" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="col-md slidetoggle">
+            <div class="row">
+                <div class="col-md">
+                <h3 class="btn btn-primary">slideToggle</h3>
+            </div>
+            </div>
+            <div class="row">
+                <div class="col-md">
+                    <img src="img/chopper.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- fadein - fadeout -->
+    <div class="row mt-5 mx-5">
+        <div class="col-md fadeout">
+            <div class="row">
+                <div class="col-md">
+                <h3 class="btn btn-primary">fadeOut</h3>
+            </div>
+            </div>
+            <div class="row">
+                <div class="col-md">
+                    <img src="img/robin.png" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="col-md fadein">
+            <div class="row">
+                <div class="col-md">
+                <h3 class="btn btn-primary">fadeIn</h3>
+            </div>
+            </div>
+            <div class="row">
+                <div class="col-md">
+                    <img src="img/franky.png" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="col-md fades">
+            <div class="row">
+                <div class="col-md">
+                <h3 class="btn btn-primary">fadeIn - fadeOut</h3>
+            </div>
+            </div>
+            <div class="row">
+                <div class="col-md">
+                    <img src="img/brook.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- html - text -->
+    <div class="row mx-5 mt-5">
+        <div class="col-md html">
+            <h3><b>Prueba de HTML (hacer click)</b></h3>
+        </div>
+        <div class="col-md text">
+            <h3><b>Prueba de text (hacer click)<s/b></h3>
+        </div>
+    </div>
+
+    <!-- addclass - val - attr   -->
+    <div class="row mt-5 mx-5">
+        <div class="col-md addclass mx-3">
+            <h3>addclass (hacer click)</h3>
+        </div>
+        <div class="col-md mx-3 val">
+            <h3>Input: <input type="text" value="val(hacer click en input)"></h3>
+        </div>
+        <div class="col-md attr mx-3">
+            <div class="btn btn-warning link-attr"><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">IR a google</a></div>
+            <div class="btn btn-warning arreglar-attr">Arreglar el link de arriba</div>
+        </div>
+    </div> 
+
+    <!-- before - prepend - append - after -->
+    <div class="row my-5">
+        <div class="col-md-4"></div>
+        <div class="col-md-4 parrafos">
+            <h3>[Parrafo]</h3>
+        </div>
+        <div class="col-md-4"></div>
+    </div>
+
+
+    <!-- DESDE ACA SOLO SCRIPT -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+    <script src="funciones-jquery2.js"></script>
+
+</body>
+
+</html>

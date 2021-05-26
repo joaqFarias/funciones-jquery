@@ -1,0 +1,45 @@
+* {
+    /* para dar el cuadriculado */
+        outline: 1px dotted yellowgreen;
+        margin: 0px;
+        padding: 0px;
+}
+
+.tabla-contenidos {
+    padding-left: 10%;
+    padding-right: 10%;
+    min-width: 100%;
+    position: absolute;
+}
+
+.imagen {
+    display: table;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+}
+
+.imagen span {
+    line-height: normal;
+    font-size: 11px;
+    display: table-caption;
+    margin: 0;
+    padding: 0;
+    background: #646464;
+    color: white;
+    font-style: italic;
+    text-align: center;
+    position: relative;
+    height: 10%;
+}
+
+.imagen span span {
+    background: rgba(0, 0, 0, 0.4);
+    display: block;
+    /* padding: 3px; */
+    text-shadow: 0 0 15px black;
+}
+
+.titulos{
+    display: inline-block;
+}
